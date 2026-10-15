@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sons do Pampa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <section id="tela-inicial" class="tela ativa">
+
+            <div class="icone">🌿</div>
+
+            <h1>SONS DO PAMPA</h1>
+
+            <p class="subtitulo">
+                Você consegue reconhecer os animais do Pampa pelo som?
+            </p>
+
+            <p class="descricao">
+                Ouça o som de um animal e escolha qual animal você acha que está fazendo esse som.
+            </p>
+
+            <button id="botao-iniciar" class="botao-principal">
+                COMEÇAR QUIZ
+            </button>
+
+        </section>
+
+
+        <!-- TELA DO QUIZ -->
+        <section id="tela-quiz" class="tela">
+
+            <div class="topo-quiz">
+
+                <span id="numero-pergunta">
+                    1 / 6
+                </span>
+
+                <span id="pontuacao">
+                    Pontos: 0
+                </span>
+
+            </div>
+
+
+            <div class="progresso">
+
+                <div id="barra-progresso"></div>
+
+            </div>
+
+
+            <h2>
+                🔊 Que animal faz este som?
+            </h2>
+
+
+            <!-- BOTÃO DO ÁUDIO -->
+
+            <button id="botao-som" class="botao-som">
+                ▶ OUVIR SOM
+            </button>
+
+            <p id="status-som">
+                Clique para ouvir o som
+            </p>
+
+
+            <!-- ALTERNATIVAS -->
+
+            <div id="opcoes" class="opcoes">
+            </div>
+
+
+            <!-- RESULTADO DA QUESTÃO -->
+
+            <div id="resultado" class="resultado">
+            </div>
+
+
+            <button id="botao-proximo" class="botao-proximo">
+                PRÓXIMO →
+            </button>
+
+        </section>
+
+
+        <!-- TELA FINAL -->
+
+        <section id="tela-final" class="tela">
+
+            <div class="icone">🌾</div>
+
+            <h1>FIM DO QUIZ!</h1>
+
+            <p class="resultado-final">
+                Você acertou
+            </p>
+
+            <div id="pontuacao-final">
+                0 / 6
+            </div>
+
+            <p id="mensagem-final">
+                Muito bem!
+            </p>
+
+            <button id="botao-reiniciar" class="botao-principal">
+                JOGAR NOVAMENTE
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <!-- ÁUDIO -->
+
+    <audio id="audio-animal"></audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
